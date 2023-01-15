@@ -29,7 +29,7 @@ body{
 
 /* header styles */
 .header{
-    /* width: 1920px; */
+    /* max-width: 1920px; */
     height: 1322px;
     background: rgba(255, 144, 14, 0.1);
 }
@@ -68,7 +68,7 @@ nav li a{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
 }
 .banner-info{
     width: 862px;
@@ -144,4 +144,85 @@ nav li a{
 }
 .feature-list .btn-primary {
     margin-top: 32px;
+}
+
+/* feature details section style  */
+.feature-details-container {
+    height: 1059px; 
+    margin-top: 130px;
+    display: flex;
+    /* gap: 54px; */
+    justify-content: center;
+    align-items: center;
+}
+.feature-detail-info{
+    margin-top: 80px;
+}
+.feature-detail-title-container {
+    display: flex;
+    gap: 21px;
+}
+.css-rectangle {
+    width: 5px;
+    height: 106px;
+    left: 240px;
+    top: 2284px;
+    background: #FF900E;
+}
+.feature-detail-info-title {
+    width: 468px;
+    height: 106px;
+    color: #131313;
+    font-weight: 700;
+    font-size: 45px;
+}
+.feature-detail-info-description {
+    width: 586px;
+    height: 78px;
+    color: #727272;
+    margin-top: 24px;
+}
+.feature-details {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-row-gap: 20px;
+}
+.feature-detail {
+    width: 586px;
+    height: 171px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+}
+.feature-detail-title{
+    color: #131313;
+    font-weight: 600;
+    font-size: 20px;
+    padding: 30px 33px;
+}
+.feature-detail-description{
+    color: #727272;
+    margin-left: 30px;
+}
+.feature-experience-image img{
+    width: 708px;
+    height: 982px;
+    margin-left: 146px;
+    margin-bottom: 40px;
+}
+.translate-btn {
+    padding: 40px;
+    position: absolute;
+    translate: 54px -155px;
+    width: 342px;
+    height: 200px;
+}
+button h3 {
+    font-weight: 700;
+    font-size: 65px;
+}
+
+button p{
+    font-weight: 500;
+    font-size: 25px;
 }
