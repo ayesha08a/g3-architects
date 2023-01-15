@@ -1,0 +1,147 @@
+/* fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+
+/* common styles and utilities*/
+*{
+    margin: 0;
+}
+body{
+    /* width: 1920px; */
+    font-family: 'Work Sans', sans-serif;
+}
+.main{
+    max-width: 1440px;
+    margin: 0 auto;
+    background-color: #ffffff;
+}
+.btn-primary {
+    width: 180px;
+    height: 64px;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 20px;
+    border: 0;
+    padding: 20px 24px;
+    height: 64px;
+    background: #FF900E;
+    border-radius: 8px;
+}
+
+/* header styles */
+.header{
+    /* width: 1920px; */
+    height: 1322px;
+    background: rgba(255, 144, 14, 0.1);
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 240px;
+    margin-left: 228px;
+}
+.logo-title{
+    color: #131313;
+    font-weight: 700;
+    font-size: 45px;
+    margin-top: 50px;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 477px;
+    height: 26px;
+    margin-top: 63px;
+}
+nav li{
+    list-style: none;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+}
+nav li a{
+    text-decoration: none;
+}
+
+.banner-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.banner-info{
+    width: 862px;
+    height: 225px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 130px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.banner-title{
+    font-weight: 700;
+    font-size: 64px;
+    text-align: center;
+}
+.banner-description {
+    color: #727272;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+.banner-image img{
+    width: 70%;
+    display: block;
+    height: 700px;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 100px;
+    border-radius: 8px;
+}
+
+/* feature list section style  */
+.features-container{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 85px;
+}
+.feature-images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 24px;
+    grid-row-gap: 24px;
+}
+.feature-images img{
+    width: 100%;
+}
+.feature-list{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 537px;
+    height: 304px;
+}
+.feature-list-title {
+    height: 106px;
+    color: #727272;
+    font-weight: 500;
+    font-size: 45px;
+}
+.feature-list-title span{
+    font-weight: 700;
+}
+.feature-list-description {
+    height: 78px;
+    color: #727272;
+    margin-top: 24px;
+}
+.feature-list .btn-primary {
+    margin-top: 32px;
+}
