@@ -35,10 +35,9 @@ body{
 }
 nav {
     display: flex;
+    gap: 633px;
     align-items: center;
-    justify-content: space-between;
-    margin-right: 240px;
-    margin-left: 228px;
+    justify-content: center;
 }
 .logo-title{
     color: #131313;
@@ -92,13 +91,11 @@ nav li a{
     margin-bottom: 30px;
 }
 .banner-image img{
-    width: 70%;
     display: block;
     height: 700px;
-    margin-top: 25px;
+    margin-top: 125px;
     margin-left: auto;
     margin-right: auto;
-    padding: 100px;
     border-radius: 8px;
 }
 
@@ -277,4 +274,58 @@ button p{
     font-weight: 600;
     font-size: 20px;
     margin-top: 5px;
+}
+
+/* sponsors section style  */
+.sponsor-info{
+    width: 862px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 130px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.sponsor-info-title{
+    color: #131313;
+    font-weight: 700;
+    font-size: 45px;
+}
+.sponsor-info-description{
+    text-align: center;
+    margin-top: 24px;
+}
+.sponsor-container{
+    margin-top: 50px;
+}
+.sponsors{
+    display: flex;
+    justify-content: center;
+    gap: 124px;
+}
+.sponsor img{
+    width: 165.83px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    filter: grayscale(100%);
+}
+
+/* footer style  */
+footer {
+    width: 1440px;
+    height: 100px;
+    margin-top: 130px;
+    margin-left: auto;
+    margin-right: auto;
+    background: #FFF4E7;
+    border-radius: 8px;
+}
+.footer-content p{
+    color: #424242;
+    font-weight: 400;
+    font-size: 20px;
+    padding: 40px 410px;
 }
