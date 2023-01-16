@@ -28,7 +28,7 @@ body{
 }
 
 /* header styles */
-.header{
+header{
     /* max-width: 1920px; */
     height: 1322px;
     background: rgba(255, 144, 14, 0.1);
@@ -224,12 +224,10 @@ button p{
 
 /* facts section style  */
 .facts-container{
-    margin-top: 100px;
+    margin-top: 130px;
 }
 .facts-info{
     width: 1440px;
-    /* height: 1059px; */
-    margin-top: 130px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -278,7 +276,6 @@ button p{
 
 /* sponsors section style  */
 .sponsor-info{
-    width: 862px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -292,6 +289,7 @@ button p{
     font-size: 45px;
 }
 .sponsor-info-description{
+    color: #727272;
     text-align: center;
     margin-top: 24px;
 }
@@ -313,6 +311,65 @@ button p{
     filter: grayscale(100%);
 }
 
+/* client reviews section style  */
+.client-reviews-info{
+    width: 862px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 130px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.client-review-title{
+    color: #131313;
+    font-weight: 700;
+    font-size: 45px;
+    text-align: center;
+}
+.client-review-description{
+    color: #727272;
+    text-align: center;
+    margin-top: 24px;
+}
+.clients{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 10px;
+    grid-column-gap: 30px;
+}
+.client{
+    display: flex;
+    justify-content: center;
+    width: 550px;
+    height: 200px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+    margin-top: 30px;
+    padding: 10px;
+}
+.client-info{
+    padding: 15px;
+}
+.client img{
+    height: 100px;
+    border-radius: 50%;
+    background-color: #FFF4E7;
+}
+.client-name{
+    color: #131313;
+    font-weight: 700;
+    font-size: 25px;
+}
+.client-company{
+    color: #727272;
+}
+.client-testimonial{
+    margin-top: 15px;
+    margin-bottom: 20px;
+    text-align: justify;
+}
 /* footer style  */
 footer {
     width: 1440px;
@@ -329,3 +386,161 @@ footer {
     font-size: 20px;
     padding: 40px 410px;
 }
+
+/* Media Queries  */
+@media only screen and (max-width:576px){
+        header{
+            height: 1050px;
+        }
+        nav {
+                display: flex;
+                flex-direction: column;
+                gap: 0px;
+                align-items: center;
+        }
+        nav ul {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 40px;
+            padding-inline-start: 0px;
+        }
+        .banner-info {
+            width: 100%;
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            margin-top: 80px;
+        }
+        .banner-description{
+            padding: 5px;
+        }
+        .banner-image img {
+            width: 80%;
+            display: block;
+            height: 300px;
+            margin-top: 50px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .features-container{
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+        }
+        .feature-images {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-row-gap: 12px;
+            padding: 10px;
+        }
+        .feature-list-description {
+            width: 75%;
+        }
+        .feature-details-container{
+            display: block;
+            padding: 10px;
+            margin-top: 25px;
+        }
+        .feature-detail-info-description {
+            width: 100%;
+            margin-top: 55px;
+        }
+        .feature-details{
+            margin: 20px auto;
+        }
+        .feature-detail {
+            width: 100%;
+        }
+        .feature-experience-image img {
+            width: 100%;
+            height: 600px;
+            margin: 0 auto;
+            margin-bottom: 10px;
+        }
+        .translate-btn {
+            width: 93%;
+            height: 150px;
+            padding: 20px;
+            translate: 5px 0px;
+        }
+        .facts-container{
+            margin-top: 850px;
+        }
+        .facts-info-title {
+            padding: 10px;
+        }
+        .facts-info-description {
+            width: 28%;
+            margin-top: 12px;
+            margin-bottom: 50px;
+            padding: 10px;
+        }
+        .facts {
+            display: flex;
+            justify-content: center;
+            gap: 85px;
+            flex-direction: column;
+            align-items: center;
+        }
+        .fact {
+            width: 50%;
+            height: 150px;
+            padding: 5px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .sponsors {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+        }
+        .client-review-title {
+            width: 45%;
+            text-align: center;
+            padding: 10px;
+        }
+        .client-review-description {
+            width: 45%;
+            padding: 10px;
+            text-align: justify;
+        }
+        .clients {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-row-gap: 10px;
+            padding: 10px;
+        }
+        .client {
+            width: 44%;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            background: #FFFFFF;
+            box-shadow: 0px 4px 30px rgb(0 0 0 / 6%);
+            border-radius: 8px;
+            margin-top: 30px;
+            padding: 10px;
+        }
+        .client-info{
+            width: 50%;
+        }
+        footer{
+            width: 95%;
+            margin-top: 130px;
+            margin-bottom: 130px;
+            margin-left: 10px;
+            margin-right: 10px;           
+        }
+        .footer-content p{
+            width: 100%;
+            font-size: 10px;
+            padding: 45px 45px;
+        }
+}
+
