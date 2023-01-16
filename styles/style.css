@@ -243,6 +243,7 @@ button p{
     color: #727272;
     width: 542px;
     height: 52px;
+    text-align: justify;
     margin-top: 24px;
     margin-bottom: 100px;
 }
@@ -260,6 +261,12 @@ button p{
     align-items: center;
     border: 1px solid #FF900E;
     border-radius: 8px;
+}
+.fact:hover{
+    background: rgba(255, 144, 14, 0.1);
+    border: 0;
+    transform: scale(1.3); 
+    transition: all .5s ease-in-out;
 }
 .fact-title{
     color: #424242;
@@ -301,6 +308,11 @@ button p{
     justify-content: center;
     gap: 124px;
 }
+.sponsor img:hover{
+    filter: none;
+    filter: grayscale(0);
+    transform: scale(1.5);
+}
 .sponsor img{
     width: 165.83px;
     height: 50px;
@@ -308,7 +320,7 @@ button p{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    filter: grayscale(100%);
+    filter: grayscale(1);
 }
 
 /* client reviews section style  */
@@ -353,9 +365,11 @@ button p{
     padding: 15px;
 }
 .client img{
-    height: 100px;
+    height: 80px;
     border-radius: 50%;
     background-color: #FFF4E7;
+    margin-top: 10px;
+    padding: 5px;
 }
 .client-name{
     color: #131313;
@@ -389,6 +403,9 @@ footer {
 
 /* Media Queries  */
 @media only screen and (max-width:576px){
+        html,body{
+            overflow-x: hidden;
+        }
         header{
             height: 1050px;
         }
@@ -435,8 +452,11 @@ footer {
             grid-row-gap: 12px;
             padding: 10px;
         }
-        .feature-list-description {
-            width: 75%;
+        .feature-list-title, .feature-list-description{
+            width: 60%;
+        }
+        .feature-list .btn-primary {
+            margin-top: 50px;
         }
         .feature-details-container{
             display: block;
@@ -445,13 +465,17 @@ footer {
         }
         .feature-detail-info-description {
             width: 100%;
-            margin-top: 55px;
+            margin-top: 75px;
         }
         .feature-details{
-            margin: 20px auto;
+            margin: 40px auto;
         }
         .feature-detail {
             width: 100%;
+            height: 200px;
+        }
+        .feature-detail-description, .sponsor-info-description{
+            width: 80%;
         }
         .feature-experience-image img {
             width: 100%;
@@ -466,13 +490,13 @@ footer {
             translate: 5px 0px;
         }
         .facts-container{
-            margin-top: 850px;
+            margin-top: 1000px;
         }
         .facts-info-title {
             padding: 10px;
         }
         .facts-info-description {
-            width: 28%;
+            width: 23%;
             margin-top: 12px;
             margin-bottom: 50px;
             padding: 10px;
@@ -501,12 +525,12 @@ footer {
             gap: 50px;
         }
         .client-review-title {
-            width: 45%;
+            width: 40%;
             text-align: center;
             padding: 10px;
         }
         .client-review-description {
-            width: 45%;
+            width: 38%;
             padding: 10px;
             text-align: justify;
         }
@@ -514,10 +538,10 @@ footer {
             display: grid;
             grid-template-columns: repeat(1, 1fr);
             grid-row-gap: 10px;
-            padding: 10px;
+            padding: 20px;
         }
         .client {
-            width: 44%;
+            width: 38%;
             height: auto;
             display: flex;
             justify-content: center;
@@ -525,10 +549,12 @@ footer {
             box-shadow: 0px 4px 30px rgb(0 0 0 / 6%);
             border-radius: 8px;
             margin-top: 30px;
-            padding: 10px;
         }
         .client-info{
             width: 50%;
+        }
+        .client-testimonial{
+            text-align: left;
         }
         footer{
             width: 95%;
@@ -538,9 +564,8 @@ footer {
             margin-right: 10px;           
         }
         .footer-content p{
-            width: 100%;
             font-size: 10px;
-            padding: 45px 45px;
+            padding: 40px 40px;
+            text-align: center;
         }
 }
-
